@@ -271,7 +271,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                 theReport6.RegisterData(repDataSet);
 
-                theReport6.Load(TGlobalItems.ReportsFolder + "ChartGunShift.frx");
+                theReport6.Load(TGlobalItems.ReportsFolder + "\\ChartGunShift.frx");
                 theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                 theReport6.SetParameterValue("Section", editSection.EditValue.ToString());
 
@@ -400,7 +400,7 @@ namespace Mineware.Systems.Minewaste.Controls
                     theReport55.RegisterData(DS);
                     theReport55.RegisterData(DSa);
 
-                    theReport55.Load(TGlobalItems.ReportsFolder + "ProblemsReport2.frx");
+                    theReport55.Load(TGlobalItems.ReportsFolder + "\\ProblemsReport2.frx");
                     theReport55.SetParameterValue("Section", editSection.EditValue.ToString());
                     theReport55.SetParameterValue("Section2", editSection.EditValue.ToString());
                     theReport55.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
@@ -525,7 +525,7 @@ namespace Mineware.Systems.Minewaste.Controls
                             theReport5.RegisterData(DS);
                             theReport5.RegisterData(DSa);
 
-                            theReport5.Load(TGlobalItems.ReportsFolder + "ProblemsReport.frx");
+                            theReport5.Load(TGlobalItems.ReportsFolder + "\\ProblemsReport.frx");
                             theReport5.SetParameterValue("Section", editSection.EditValue.ToString());
                             theReport5.SetParameterValue("Section2", editSection.EditValue.ToString() + " " + editGun.EditValue);
                             theReport5.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
@@ -650,7 +650,7 @@ namespace Mineware.Systems.Minewaste.Controls
                             theReport5.RegisterData(DS);
                             theReport5.RegisterData(DSa);
 
-                            theReport5.Load(TGlobalItems.ReportsFolder + "ProblemsReport.frx");
+                            theReport5.Load(TGlobalItems.ReportsFolder + "\\ProblemsReport.frx");
                             theReport5.SetParameterValue("Section", editSection.EditValue.ToString());
                             theReport5.SetParameterValue("Section2", editSection.EditValue.ToString());
                             theReport5.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
@@ -695,7 +695,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                 theReport6.RegisterData(repDataSet);
 
-                theReport6.Load(TGlobalItems.ReportsFolder + "BookCompReportTonnesTotMine.frx");
+                theReport6.Load(TGlobalItems.ReportsFolder + "\\BookCompReportTonnesTotMine.frx");
                 theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                 //theReport6.SetParameterValue("Section", editSection.EditValue.ToString());
 
@@ -872,7 +872,7 @@ namespace Mineware.Systems.Minewaste.Controls
                         theReport5.RegisterData(DSa);
 
 
-                        theReport5.Load(TGlobalItems.ReportsFolder + "PumpStationDowntime.frx");
+                        theReport5.Load(TGlobalItems.ReportsFolder + "\\PumpStationDowntime.frx");
                         theReport5.SetParameterValue("Section", editSection.EditValue.ToString());
                         theReport5.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
 
@@ -1052,7 +1052,7 @@ namespace Mineware.Systems.Minewaste.Controls
                         theReport5.RegisterData(DSa);
 
 
-                        theReport5.Load(TGlobalItems.ReportsFolder + "PumpStationDowntime.frx");
+                        theReport5.Load(TGlobalItems.ReportsFolder + "\\PumpStationDowntime.frx");
                         theReport5.SetParameterValue("Section", editSection.EditValue.ToString());
                         theReport5.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
 
@@ -1292,7 +1292,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "RunningHoursReport.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\RunningHoursReport.frx");
                         theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                         theReport6.SetParameterValue("Section", editSection.EditValue.ToString());
 
@@ -1401,7 +1401,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "RunningHoursReportTot.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\RunningHoursReportTot.frx");
                         theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                         theReport6.SetParameterValue("Section", editSection.EditValue.ToString());                   
                        
@@ -1503,7 +1503,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "RunningTonnesReport.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\RunningTonnesReport.frx");
                         theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                         theReport6.SetParameterValue("Section", editSection.EditValue.ToString());
 
@@ -1598,7 +1598,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "RunningTonnesReportTot.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\RunningTonnesReportTot.frx");
                         theReport6.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
                         theReport6.SetParameterValue("Section", editSection.EditValue.ToString());
 
@@ -1700,7 +1700,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "BookCompReport.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\BookCompReport.frx");
 
                         theReport6.SetParameterValue("Gun1", gun1);
                         theReport6.SetParameterValue("Gun2", gun2);
@@ -1808,7 +1808,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "BookCompReportSec.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\BookCompReportSec.frx");
 
                         theReport6.SetParameterValue("Gun1", gun1);
                         theReport6.SetParameterValue("Gun2", gun2);
@@ -1892,7 +1892,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "BookCompReport2.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\BookCompReport2.frx");
 
                         theReport6.SetParameterValue("Gun1", gun1);
                         theReport6.SetParameterValue("Gun2", gun2);
@@ -1973,7 +1973,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
                         theReport6.RegisterData(repDataSet);
 
-                        theReport6.Load(TGlobalItems.ReportsFolder + "BookCompReportTonnes.frx");
+                        theReport6.Load(TGlobalItems.ReportsFolder + "\\BookCompReportTonnes.frx");
 
                         theReport6.SetParameterValue("Gun1", gun1);
                         theReport6.SetParameterValue("Gun2", gun2);
@@ -2299,7 +2299,7 @@ namespace Mineware.Systems.Minewaste.Controls
 
             theReport5.RegisterData(repDataSet);
 
-            theReport5.Load(TGlobalItems.ReportsFolder + "RunningHoursReportDetail.frx");
+            theReport5.Load(TGlobalItems.ReportsFolder + "\\RunningHoursReportDetail.frx");
             theReport5.SetParameterValue("Sec", editSection.EditValue.ToString());
             theReport5.SetParameterValue("Gun", GunLbl.Text);
             theReport5.SetParameterValue("Prodmonth", TMinewasteGlobal.ProdMonthAsString(Convert.ToDateTime(editProdmonth.EditValue)).ToString());
