@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mineware.Systems.HarmonyMinewaste</RootNamespace>
+    <AssemblyName>Mineware.Systems.HarmonyMinewaste</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\MIMSHARMONYDOORNKOP\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.1" />
+    <Reference Include="DevExpress.Data.v20.1" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1" />
+    <Reference Include="DevExpress.Utils.v20.1" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1" />
+    <Reference Include="DevExpress.Printing.v20.1.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FastReport, Version=2020.2.7.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Menu.Structure">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Menu.Structure.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Plugin.Interface">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Plugin.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.Components">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Systems.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.Global">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Systems.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.GlobalConnect">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Systems.GlobalConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.GlobalExtensions">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Systems.GlobalExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.HarmonyPASGlobal">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Bin\Mineware.Systems.HarmonyPASGlobal.dll</HintPath>
+    </Reference>
+    <Reference Include="Mineware.Systems.Settings">
+      <HintPath>C:\MIMSHARMONYDOORNKOP\Plugin\Mineware.Systems.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsDataAccess.cs" />
+    <Compile Include="Classes\clsPlanning.cs" />
+    <Compile Include="Classes\clsUserInformation.cs" />
+    <Compile Include="Classes\GlobalItems.cs" />
+    <Compile Include="Classes\VPNManager.cs" />
+    <Compile Include="Controls\clsBookings.cs" />
+    <Compile Include="Controls\Dashboard\ucDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboard\ucDashboard.Designer.cs">
+      <DependentUpon>ucDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucBookings.designer.cs">
+      <DependentUpon>ucBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCalendars.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCalendars.designer.cs">
+      <DependentUpon>ucCalendars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucCalendarsAssign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCalendarsAssign.designer.cs">
+      <DependentUpon>ucCalendarsAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPlanning.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPlanning.designer.cs">
+      <DependentUpon>ucPlanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProbCat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProbCat.designer.cs">
+      <DependentUpon>ucProbCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProbCatPumpStation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProbCatPumpStation.designer.cs">
+      <DependentUpon>ucProbCatPumpStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProblemPump.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProblemPump.designer.cs">
+      <DependentUpon>ucProblemPump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucProblems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucProblems.designer.cs">
+      <DependentUpon>ucProblems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucPumpStationSetup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucPumpStationSetup.designer.cs">
+      <DependentUpon>ucPumpStationSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucReportSignatures.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucReportSignatures.designer.cs">
+      <DependentUpon>ucReportSignatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucReportsViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucReportsViewer.designer.cs">
+      <DependentUpon>ucReportsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucReportsViewerStream.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucReportsViewerStream.designer.cs">
+      <DependentUpon>ucReportsViewerStream.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSections.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSections.designer.cs">
+      <DependentUpon>ucSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSetupUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSetupUsers.designer.cs">
+      <DependentUpon>ucSetupUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProbCatFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProbCatFrm.designer.cs">
+      <DependentUpon>AddProbCatFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProbCatPump.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProbCatPump.designer.cs">
+      <DependentUpon>AddProbCatPump.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProbFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProbFrm.designer.cs">
+      <DependentUpon>AddProbFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddProbPumpFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddProbPumpFrm.designer.cs">
+      <DependentUpon>AddProbPumpFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPumpStationFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddPumpStationFrm.designer.cs">
+      <DependentUpon>AddPumpStationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookingEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookingEditFrm.designer.cs">
+      <DependentUpon>BookingEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCalType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCalType.designer.cs">
+      <DependentUpon>frmCalType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSection.designer.cs">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GetImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GetImage.designer.cs">
+      <DependentUpon>GetImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainScreenFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainScreenFrm.designer.cs">
+      <DependentUpon>MainScreenFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProblemBookingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProblemBookingFrm.designer.cs">
+      <DependentUpon>ProblemBookingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProblemBookingPumpStationFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProblemBookingPumpStationFrm.designer.cs">
+      <DependentUpon>ProblemBookingPumpStationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PropFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PropFrm.designer.cs">
+      <DependentUpon>PropFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PumpStationBookingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PumpStationBookingFrm.designer.cs">
+      <DependentUpon>PumpStationBookingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TsysNotification.cs" />
+    <Compile Include="Minewaste.cs" />
+    <Compile Include="MinewasteMenuStructure.cs" />
+    <Compile Include="MinewasteResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MinewasteResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ucBookings.resx">
+      <DependentUpon>ucBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCalendars.resx">
+      <DependentUpon>ucCalendars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucCalendarsAssign.resx">
+      <DependentUpon>ucCalendarsAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPlanning.resx">
+      <DependentUpon>ucPlanning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProbCat.resx">
+      <DependentUpon>ucProbCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProbCatPumpStation.resx">
+      <DependentUpon>ucProbCatPumpStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProblemPump.resx">
+      <DependentUpon>ucProblemPump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucProblems.resx">
+      <DependentUpon>ucProblems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucPumpStationSetup.resx">
+      <DependentUpon>ucPumpStationSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucReportSignatures.resx">
+      <DependentUpon>ucReportSignatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucReportsViewer.resx">
+      <DependentUpon>ucReportsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucReportsViewerStream.resx">
+      <DependentUpon>ucReportsViewerStream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSections.resx">
+      <DependentUpon>ucSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSetupUsers.resx">
+      <DependentUpon>ucSetupUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProbCatFrm.resx">
+      <DependentUpon>AddProbCatFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProbCatPump.resx">
+      <DependentUpon>AddProbCatPump.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProbFrm.resx">
+      <DependentUpon>AddProbFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddProbPumpFrm.resx">
+      <DependentUpon>AddProbPumpFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPumpStationFrm.resx">
+      <DependentUpon>AddPumpStationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookingEditFrm.resx">
+      <DependentUpon>BookingEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCalType.resx">
+      <DependentUpon>frmCalType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSection.resx">
+      <DependentUpon>frmSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GetImage.resx">
+      <DependentUpon>GetImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainScreenFrm.resx">
+      <DependentUpon>MainScreenFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProblemBookingFrm.resx">
+      <DependentUpon>ProblemBookingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProblemBookingPumpStationFrm.resx">
+      <DependentUpon>ProblemBookingPumpStationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PropFrm.resx">
+      <DependentUpon>PropFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PumpStationBookingFrm.resx">
+      <DependentUpon>PumpStationBookingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinewasteResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MinewasteResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\BlueIconMain.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

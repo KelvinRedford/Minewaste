@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mineware.Systems.Minewaste", "Mineware.Systems.HarmonyMinewaste\Mineware.Systems.Minewaste.csproj", "{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mineware.Systems.MinewasteGlobal", "Mineware.Systems.HarmonyMinewasteGlobal\Mineware.Systems.MinewasteGlobal.csproj", "{8EE252B3-B366-494E-AC03-35ECE9B8D64A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092D52E2-4EAC-4D7A-90B7-FF5012A8AE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE252B3-B366-494E-AC03-35ECE9B8D64A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE252B3-B366-494E-AC03-35ECE9B8D64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE252B3-B366-494E-AC03-35ECE9B8D64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE252B3-B366-494E-AC03-35ECE9B8D64A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0F17D3B-C1F7-4B2B-B730-C3E50C71459B}
+	EndGlobalSection
+EndGlobal
