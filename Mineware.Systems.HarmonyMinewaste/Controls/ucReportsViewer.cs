@@ -2298,7 +2298,7 @@ namespace Mineware.Systems.Minewaste.Controls
             repDataSet.Tables.Add(_dbMan2.ResultsDataTable);
 
             theReport5.RegisterData(repDataSet);
-
+            //test
             theReport5.Load(TGlobalItems.ReportsFolder + "\\RunningHoursReportDetail.frx");
             theReport5.SetParameterValue("Sec", editSection.EditValue.ToString());
             theReport5.SetParameterValue("Gun", GunLbl.Text);
